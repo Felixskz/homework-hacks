@@ -2,7 +2,7 @@
 
 ## Use
 
-Unless stated otherwise, press F12 and paster into the console
+Unless stated otherwise, press F12 and paste into the console
 
 ### Other
 
