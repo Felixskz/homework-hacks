@@ -10,5 +10,5 @@ while (true) {
     question.value = answer;
     var nextButton = document.getElementById("check-answer");
     nextButton.click();
-    await delay(300);
+    await delay(200);
 }
