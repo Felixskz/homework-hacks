@@ -2,15 +2,17 @@ GymGame.autoUpdateActive = false;
 
 var scoreElement = document.getElementsByClassName("progress-count")[0];
 var numbers = scoreElement.innerHTML.split('/');
-var current = numbers[0];
 var current = parseInt(numbers[0]);
 var total = parseInt(numbers[1]);
 
 for (var i = 0; i < total-current+1; i++) {
     GymGame.addCorrect();
     getNextQuestion();
+    if (i == total-current) {
+        setTimeout(function() {
+            var question = document.getElementById("verb-trainer-inputanswer");
+            var answer = question.getAttribute("data-answer");
+            question.value = answer;
+        }, 2000);
+    }
 }
-
-var question = document.getElementById("verb-trainer-inputanswer"); // textbox
-var answer = question.getAttribute("data-answer"); // the answer
-question.value = answer;
