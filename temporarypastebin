@@ -10,3 +10,7 @@ for (var i = 0; i < total-current+1; i++) {
     GymGame.addCorrect();
     getNextQuestion();
 }
+
+var question = document.getElementById("verb-trainer-inputanswer"); // textbox
+var answer = question.getAttribute("data-answer"); // the answer
+question.value = answer;
