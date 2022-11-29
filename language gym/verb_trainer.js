@@ -1,2 +1,14 @@
-var textbox = document.getElementsByClassName("form-control answer-input input-word browser-default apostrophe-input")[0];
-textbox.value = textbox.getAttribute("data-answer");
+GymGame.hasTimer = false;
+function delay(ms) {
+    return new Promise(resolve => {
+        setTimeout(() => {resolve('') }, ms);
+    });
+}
+while (true) {
+    var question = document.getElementById("verb-trainer-inputanswer");
+    var answer = question.getAttribute("data-answer");
+    question.value = answer;
+    var nextButton = document.getElementById("check-answer");
+    nextButton.click();
+    await delay(300);
+}
