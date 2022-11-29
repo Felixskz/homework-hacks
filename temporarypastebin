@@ -1,1 +1,6 @@
 GymGame.autoUpdateActive = false;
+
+for (var i = 0; i < total-current+1; i++) {
+    GymGame.addCorrect();
+    getNextQuestion();
+}
