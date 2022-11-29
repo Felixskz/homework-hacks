@@ -1,5 +1,11 @@
 GymGame.autoUpdateActive = false;
 
+var scoreElement = document.getElementsByClassName("progress-count")[0];
+var numbers = scoreElement.innerHTML.split('/');
+var current = numbers[0];
+var current = parseInt(numbers[0]);
+var total = parseInt(numbers[1]);
+
 for (var i = 0; i < total-current+1; i++) {
     GymGame.addCorrect();
     getNextQuestion();
