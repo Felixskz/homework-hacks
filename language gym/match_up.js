@@ -17,4 +17,6 @@ for (var i = 0; i < length; i++) {
     rightItem.style.backgroundColor = colors[rightItem.getAttribute('data-couple')];
 }
 
-//imcomplet
+// i can't work out how to auto drag the stuff so uh this is the best ur gonna get
+
+// complet
