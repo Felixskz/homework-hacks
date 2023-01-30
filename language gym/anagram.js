@@ -1,4 +1,4 @@
-//doesnt work very well
+//doesnt work very well;rn u have to spam click return
 
 var textboxes = document.getElementsByClassName("hint-answer text-center apostrophe-input")
 undefined
